@@ -16,7 +16,10 @@ app.use(logger);
 app.get("/", async (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
-
+// AI小吴
+app.get("/AIXIAOWU", async (req, res) => {
+  res.sendFile(path.join(__dirname, "/AIXIAOWU/index.html"));
+});
 // 更新计数
 app.post("/api/count", async (req, res) => {
   const { action } = req.body;
